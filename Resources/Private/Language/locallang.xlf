@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:fsf_zoller_column/Resources/Private/Language/locallang" date="2020-12-14T14:31:04Z" product-name="fsf_zoller_column">
+		<header/>
+		<body>
+			<trans-unit id="tx_fsfzollercolumn_domain_model_column" resname="tx_fsfzollercolumn_domain_model_column">
+				<source>Column</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

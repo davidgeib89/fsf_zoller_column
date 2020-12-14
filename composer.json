@@ -1,0 +1,28 @@
+{
+    "name": "freesixtyfive/fsf-zoller-column",
+    "type": "typo3-cms-extension",
+    "description": "",
+    "authors": [
+        {
+            "name": "David Geib",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "typo3/cms-core": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "FREESIXTYFIVE\\FsfZollerColumn\\": "Classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "FREESIXTYFIVE\\FsfZollerColumn\\Tests\\": "Tests"
+        }
+    },
+    "replace": {
+        "freesixtyfive/fsf-zoller-column": "self.version",
+        "typo3-ter/fsf-zoller-column": "self.version"
+    }
+}

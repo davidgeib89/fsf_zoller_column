@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:fsf_zoller_column/Resources/Private/Language/locallang_db" date="2020-12-14T14:31:04Z" product-name="fsf_zoller_column">
+		<header/>
+		<body>
+			<trans-unit id="tx_fsfzollercolumn_domain_model_column" resname="tx_fsfzollercolumn_domain_model_column">
+				<source>Column</source>
+			</trans-unit>
+			<trans-unit id="tx_fsf_zoller_column_zollercolumn.name" resname="tx_fsf_zoller_column_zollercolumn.name">
+				<source>Zoller Column</source>
+			</trans-unit>
+			<trans-unit id="tx_fsf_zoller_column_zollercolumn.description" resname="tx_fsf_zoller_column_zollercolumn.description">
+				<source></source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
