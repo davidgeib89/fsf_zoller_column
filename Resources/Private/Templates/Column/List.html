@@ -1,36 +1,176 @@
-<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
-<f:layout name="Default" />
-
-This Template is responsible for creating a table of domain objects.
-
-If you modify this template, do not forget to change the overwrite settings
-in /Configuration/ExtensionBuilder/settings.yaml:
-  Resources:
-    Private:
-      Templates:
-        List.html: keep
-
-Otherwise your changes will be overwritten the next time you save the extension in the extension builder
-
-<f:section name="content">
-    <h1>Listing for Column</h1>
-
-    <f:flashMessages />
-
-    <table  class="tx_fsfzollercolumn" >
-        <tr>
-            <th> </th>
-            <th> </th>
-        </tr>
-
-        <f:for each="{columns}" as="column">
-            <tr>
-                <td><f:link.action action="edit" arguments="{column : column}">Edit</f:link.action></td>
-                <td><f:link.action action="delete" arguments="{column : column}">Delete</f:link.action></td>
-            </tr>
-        </f:for>
-    </table>
-
-    <f:link.action action="new">New Column</f:link.action>
-</f:section>
-</html>
+<div
+    class="fsf-zoller-column {f:if(condition: '{settings.color} == \'white\'', then: 'whitewhite')} {f:if(condition: '{settings.color} == \'grey\'', then: 'greygrey')}"
+>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-xl-2"></div>
+            <div class="col-12 col-xl-8 headlinewrapper">
+                <h1>{settings.headline}</h1>
+                <p>{settings.text}</p>
+            </div>
+            <div class="col-12 col-xl-2"></div>
+        </div>
+        <div class="row columnsrow">
+            <f:if condition="{settings.type} == 'two'">
+                <div class="col-12 col-xl-6">
+                    <div class="column {f:if(condition: '{settings.buttontext1} != \'\'', then: 'buttoncolumn')}" >
+                        <h3>{settings.headline1}</h3>
+                        <f:if condition="{settings.img1}">
+                            <f:image
+                                class="column-image"
+                                src="/uploads/tx_fsfzollercolumns/{settings.img1}"
+                            />
+                        </f:if>
+                        <p>{settings.text1}</p>
+                        <f:if condition="{settings.buttontext1}">
+                            <f:link.typolink
+                                parameter="{settings.url1}"
+                                target="_blank"
+                            >
+                                <button class="btn btn-yellow">
+                                    {settings.buttontext1}
+                                </button>
+                            </f:link.typolink>
+                        </f:if>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-6">
+                    <div class="column {f:if(condition: '{settings.buttontext2} != \'\'', then: 'buttoncolumn')}">
+                        <h3>{settings.headline2}</h3>
+                        <f:if condition="{settings.img2}">
+                            <f:image
+                                class="column-image"
+                                src="/uploads/tx_fsfzollercolumns/{settings.img2}"
+                            />
+                        </f:if>
+                        <p>{settings.text2}</p>
+                        <f:if condition="{settings.buttontext2}">
+                            <f:link.typolink
+                                parameter="{settings.url2}"
+                                target="_blank"
+                            >
+                                <button class="btn btn-yellow">
+                                    {settings.buttontext2}
+                                </button>
+                            </f:link.typolink>
+                        </f:if>
+                    </div>
+                </div>
+            </f:if>
+            <f:if condition="{settings.type} == 'three'">
+                <div class="col-12 col-xl-4">
+                    <div class="column {f:if(condition: '{settings.buttontext1} != \'\'', then: 'buttoncolumn')}">
+                        <h3>{settings.headline1}</h3>
+                        <f:if condition="{settings.img1}">
+                            <f:image
+                                class="column-image"
+                                src="/uploads/tx_fsfzollercolumns/{settings.img1}"
+                            />
+                        </f:if>
+                        <p>{settings.text1}</p>
+                        <f:if condition="{settings.buttontext1}">
+                            <f:link.typolink
+                                parameter="{settings.url1}"
+                                target="_blank"
+                            >
+                                <button class="btn btn-yellow">
+                                    {settings.buttontext1}
+                                </button>
+                            </f:link.typolink>
+                        </f:if>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-4">
+                    <div class="column {f:if(condition: '{settings.buttontext2} != \'\'', then: 'buttoncolumn')}">
+                        <h3>{settings.headline2}</h3>
+                        <f:if condition="{settings.img2}">
+                            <f:image
+                                class="column-image"
+                                src="/uploads/tx_fsfzollercolumns/{settings.img2}"
+                            />
+                        </f:if>
+                        <p>{settings.text2}</p>
+                        <f:if condition="{settings.buttontext2}">
+                            <f:link.typolink
+                                parameter="{settings.url2}"
+                                target="_blank"
+                            >
+                                <button class="btn btn-yellow">
+                                    {settings.buttontext2}
+                                </button>
+                            </f:link.typolink>
+                        </f:if>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-4">
+                    <div class="column {f:if(condition: '{settings.buttontext3} != \'\'', then: 'buttoncolumn')}">
+                        <h3>{settings.headline3}</h3>
+                        <f:if condition="{settings.img3}">
+                            <f:image
+                                class="column-image"
+                                src="/uploads/tx_fsfzollercolumns/{settings.img3}"
+                            />
+                        </f:if>
+                        <p>{settings.text3}</p>
+                        <f:if condition="{settings.buttontext3}">
+                            <f:link.typolink
+                                parameter="{settings.url3}"
+                                target="_blank"
+                            >
+                                <button class="btn btn-yellow">
+                                    {settings.buttontext3}
+                                </button>
+                            </f:link.typolink>
+                        </f:if>
+                    </div>
+                </div>
+            </f:if>
+            <f:if condition="{settings.type} == 'twoo'">
+                <div class="col-6">
+                    <div class="column {f:if(condition: '{settings.buttontext1} != \'\'', then: 'buttoncolumn')}">
+                        <h3>{settings.headline1}</h3>
+                        <f:if condition="{settings.img1}">
+                            <f:image
+                                class="column-image"
+                                src="/uploads/tx_fsfzollercolumns/{settings.img1}"
+                            />
+                        </f:if>
+                        <p>{settings.text1}</p>
+                        <f:if condition="{settings.buttontext1}">
+                            <f:link.typolink
+                                parameter="{settings.url1}"
+                                target="_blank"
+                            >
+                                <button class="btn btn-yellow">
+                                    {settings.buttontext1}
+                                </button>
+                            </f:link.typolink>
+                        </f:if>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="column {f:if(condition: '{settings.buttontext2} != \'\'', then: 'buttoncolumn')}">
+                        <h3>{settings.headline2}</h3>
+                        <f:if condition="{settings.img2}">
+                            <f:image
+                                class="column-image"
+                                src="/uploads/tx_fsfzollercolumns/{settings.img2}"
+                            />
+                        </f:if>
+                        <p>{settings.text2}</p>
+                        <f:if condition="{settings.buttontext2}">
+                            <f:link.typolink
+                                parameter="{settings.url2}"
+                                target="_blank"
+                            >
+                                <button class="btn btn-yellow">
+                                    {settings.buttontext2}
+                                </button>
+                            </f:link.typolink>
+                        </f:if>
+                    </div>
+                </div>
+            </f:if>
+        </div>
+    </div>
+</div>

@@ -57,3 +57,13 @@ plugin.tx_fsfzollercolumn._CSS_DEFAULT_STYLE (
         color:green;
     }
 )
+
+page{
+	includeCSS{
+		fsfzollercolumn =  EXT:fsf_zoller_column/Resources/Public/css/fsf_zoller_column.css
+      
+	}
+	includeJSFooterlibs {
+        fsfzollercolumn =  EXT:fsf_zoller_column/Resources/Public/js/main.js
+    }
+}

@@ -11,6 +11,54 @@
                 </TCEforms>
                 <type>array</type>
                 <el>
+                    <settings.type>
+						<TCEforms>
+							<label>Anzahl Spalten</label>
+							<onChange>reload</onChange>
+							<config>
+								<type>select</type>
+								<renderType>selectSingle</renderType>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">2</numIndex>
+										<numIndex index="1">two</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">3</numIndex>
+										<numIndex index="1">three</numIndex>
+									</numIndex>
+                                    <numIndex index="2" type="array">
+										<numIndex index="0">2 ohne Umbruch mobil</numIndex>
+										<numIndex index="1">twoo</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</settings.type>
+                    <settings.color>
+						<TCEforms>
+							<label>Darstellungsart (Hintergrund - Spalten)</label>
+							<onChange>reload</onChange>
+							<config>
+								<type>select</type>
+								<renderType>selectSingle</renderType>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">weiß - grau</numIndex>
+										<numIndex index="1">normal</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">weiß - weiß</numIndex>
+										<numIndex index="1">white</numIndex>
+									</numIndex>
+                                    <numIndex index="2" type="array">
+										<numIndex index="0">grau - grau</numIndex>
+										<numIndex index="1">grey</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</settings.color>    
                     <settings.headline>
                         <TCEforms>
                             <label>Überschrift</label>
@@ -22,15 +70,50 @@
                         </TCEforms>
                     </settings.headline>
                     <settings.text>
-                    <TCEforms>
+                        <TCEforms>
                             <label>Unterüberschrift</label>
                             <config>
-                                <type>input</type>
-                                <eval>trim</eval>
-                                <size>230</size>
+                                <type>text</type>
+                                <cols>30</cols>
+                                <rows>4</rows>
                             </config>
                         </TCEforms>
                     </settings.text>
+                    <settings.headline1>
+                        <TCEforms>
+                            <label>Überschrift 1. Spalte</label>
+                            <config>
+                                <type>input</type>
+                                <eval>trim</eval>
+                                <size>30</size>
+                            </config>
+                        </TCEforms>
+                    </settings.headline1>
+                    <settings.img1>
+						<TCEforms>
+							<label>Icon / Bild 1. Spalte</label>
+							<config>										
+								<type>group</type>
+								<internal_type>file</internal_type>
+								<allowed>gif, jpg,jpeg,png,csv</allowed>
+								<max_size>10000</max_size>
+								<uploadfolder>uploads/tx_fsfzollercolumns</uploadfolder>
+								<maxitems>1</maxitems>
+								<size>1</size>
+								<selectedliststyle>Width:180px</selectedliststyle>
+							</config>
+						</TCEforms>
+					</settings.img1>
+                    <settings.text1>
+                        <TCEforms>
+                            <label>Text 1. Spalte</label>
+                            <config>
+                                <type>text</type>
+                                <cols>30</cols>
+                                <rows>4</rows>
+                            </config>
+                        </TCEforms>
+                    </settings.text1>
                     <settings.buttontext1>
                         <TCEforms>
                             <label>Buttontext</label>
@@ -54,36 +137,125 @@
                             </config>
                         </TCEforms>
                     </settings.url1>
-                    <settings.img1>
+                    <settings.headline2>
+                        <TCEforms>
+                            <label>Überschrift 2. Spalte</label>
+                            <config>
+                                <type>input</type>
+                                <eval>trim</eval>
+                                <size>30</size>
+                            </config>
+                        </TCEforms>
+                    </settings.headline2>
+                    <settings.img2>
 						<TCEforms>
-							<label>Hintergrund Bild</label>
+							<label>Icon / Bild 2. Spalte</label>
 							<config>										
 								<type>group</type>
 								<internal_type>file</internal_type>
 								<allowed>gif, jpg,jpeg,png,csv</allowed>
 								<max_size>10000</max_size>
-								<uploadfolder>uploads/tx_fsfzollerheader</uploadfolder>
+								<uploadfolder>uploads/tx_fsfzollercolumns</uploadfolder>
 								<maxitems>1</maxitems>
 								<size>1</size>
 								<selectedliststyle>Width:180px</selectedliststyle>
 							</config>
 						</TCEforms>
-					</settings.img1>
-                    <settings.video>
-							<TCEforms>
-								<label>Video/Animation</label>
-								<config>
-									<type>group</type>
-									<internal_type>file</internal_type>
-									<allowed>mp4</allowed>
-									<max_size>10000</max_size>
-									<uploadfolder>uploads/tx_fsfzollerheader</uploadfolder>
-									<maxitems>1</maxitems>
-									<size>1</size>
-									<selectedliststyle>Width:180px</selectedliststyle>
-								</config>
-							</TCEforms>
-						</settings.video>
+					</settings.img2>
+                    <settings.text2>
+                        <TCEforms>
+                            <label>Text 2. Spalte</label>
+                            <config>
+                                <type>text</type>
+                                <cols>30</cols>
+                                <rows>4</rows>
+                            </config>
+                        </TCEforms>
+                    </settings.text2>
+                    <settings.buttontext2>
+                        <TCEforms>
+                            <label>Buttontext</label>
+                            <config>
+                                <type>input</type>
+                                <eval>trim</eval>
+                                <size>30</size>
+                            </config>
+                        </TCEforms>
+                    </settings.buttontext2>
+                    <settings.url2>
+                        <TCEforms>
+                            <label>Buttonlink</label>
+                            <config>
+                                <type>input</type>
+                                <size>50</size>
+                                <max>256</max>
+                                <eval>trim</eval>
+                                <renderType>inputLink</renderType>
+                                <softref>typolink</softref>
+                            </config>
+                        </TCEforms>
+                    </settings.url2>
+                    <settings.headline3>
+                        <TCEforms>
+                            <label>Überschrift 3. Spalte</label>
+                            <displayCond>FIELD:settings.type:=:three</displayCond>
+                            <config>
+                                <type>input</type>
+                                <eval>trim</eval>
+                                <size>30</size>
+                            </config>
+                        </TCEforms>
+                    </settings.headline3>
+                    <settings.img3>
+						<TCEforms>
+							<label>Icon / Bild 3. Spalte</label>
+                            <displayCond>FIELD:settings.type:=:three</displayCond>
+							<config>										
+								<type>group</type>
+								<internal_type>file</internal_type>
+								<allowed>gif, jpg,jpeg,png,csv</allowed>
+								<max_size>10000</max_size>
+								<uploadfolder>uploads/tx_fsfzollercolumns</uploadfolder>
+								<maxitems>1</maxitems>
+								<size>1</size>
+								<selectedliststyle>Width:180px</selectedliststyle>
+							</config>
+						</TCEforms>
+					</settings.img3>
+                    <settings.buttontext3>
+                        <TCEforms>
+                            <label>Buttontext</label>
+                            <config>
+                                <type>input</type>
+                                <eval>trim</eval>
+                                <size>30</size>
+                            </config>
+                        </TCEforms>
+                    </settings.buttontext3>
+                    <settings.url3>
+                        <TCEforms>
+                            <label>Buttonlink</label>
+                            <config>
+                                <type>input</type>
+                                <size>50</size>
+                                <max>256</max>
+                                <eval>trim</eval>
+                                <renderType>inputLink</renderType>
+                                <softref>typolink</softref>
+                            </config>
+                        </TCEforms>
+                    </settings.url3>
+                    <settings.text3>
+                        <TCEforms>
+                            <label>Text 3. Spalte</label>
+                            <displayCond>FIELD:settings.type:=:three</displayCond>
+                            <config>
+                                <type>text</type>
+                                <cols>30</cols>
+                                <rows>4</rows>
+                            </config>
+                        </TCEforms>
+                    </settings.text3>
                 </el>
             </ROOT>
         </sheet1>
