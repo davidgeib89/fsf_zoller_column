@@ -116,7 +116,7 @@
                     </settings.text1>
                     <settings.buttontext1>
                         <TCEforms>
-                            <label>Buttontext</label>
+                            <label>Buttontext 1. Spalte</label>
                             <config>
                                 <type>input</type>
                                 <eval>trim</eval>
@@ -126,7 +126,7 @@
                     </settings.buttontext1>
                     <settings.url1>
                         <TCEforms>
-                            <label>Buttonlink</label>
+                            <label>Buttonlink 1. Spalte</label>
                             <config>
                                 <type>input</type>
                                 <size>50</size>
@@ -174,7 +174,7 @@
                     </settings.text2>
                     <settings.buttontext2>
                         <TCEforms>
-                            <label>Buttontext</label>
+                            <label>Buttontext 2. Spalte</label>
                             <config>
                                 <type>input</type>
                                 <eval>trim</eval>
@@ -184,7 +184,7 @@
                     </settings.buttontext2>
                     <settings.url2>
                         <TCEforms>
-                            <label>Buttonlink</label>
+                            <label>Buttonlink 2. Spalte</label>
                             <config>
                                 <type>input</type>
                                 <size>50</size>
@@ -224,7 +224,8 @@
 					</settings.img3>
                     <settings.buttontext3>
                         <TCEforms>
-                            <label>Buttontext</label>
+                            <label>Buttontext 3. Spalte</label>
+                            <displayCond>FIELD:settings.type:=:three</displayCond>
                             <config>
                                 <type>input</type>
                                 <eval>trim</eval>
@@ -234,7 +235,8 @@
                     </settings.buttontext3>
                     <settings.url3>
                         <TCEforms>
-                            <label>Buttonlink</label>
+                            <label>Buttonlink 3. Spalte</label>
+                            <displayCond>FIELD:settings.type:=:three</displayCond>
                             <config>
                                 <type>input</type>
                                 <size>50</size>
