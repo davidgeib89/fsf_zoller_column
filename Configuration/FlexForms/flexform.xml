@@ -58,7 +58,27 @@
 								</items>
 							</config>
 						</TCEforms>
-					</settings.color>    
+					</settings.color>
+                    <settings.distance>
+						<TCEforms>
+							<label>Abstand nach Unten</label>
+							<onChange>reload</onChange>
+							<config>
+								<type>select</type>
+								<renderType>selectSingle</renderType>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">normaler Abstand</numIndex>
+										<numIndex index="1">distance</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">kein Abstand (Vergleich)</numIndex>
+										<numIndex index="1">nodistance</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</settings.distance>    
                     <settings.headline>
                         <TCEforms>
                             <label>Überschrift</label>

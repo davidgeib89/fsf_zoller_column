@@ -1,5 +1,9 @@
 .fsf-zoller-column {
-    margin-bottom: 150px;
+    margin-bottom: 150px!important;
+}
+
+.fsf-zoller-column.nodistance {
+    margin-bottom: 0px!important;
 }
 
 .fsf-zoller-column .container {
@@ -49,6 +53,7 @@
 .fsf-zoller-column .column-image {
     max-width: 100%;
     display: block;
+    height: auto;
     margin: 0 auto;
     margin-bottom: 35px;
 }
@@ -78,7 +83,7 @@
         margin-bottom: 20px;
     }
     .fsf-zoller-column .columnsrow .column {
-        padding: 20px;
+        padding: 15px;
     }
 }
 

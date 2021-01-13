@@ -1,0 +1,28 @@
+<h1>
+    Zoller Column
+    <f:if condition="{pi_flexform_transformed.settings.type} == 'two'">
+        2 Spalten
+    </f:if>
+    <f:if condition="{pi_flexform_transformed.settings.type} == 'three'">
+        3 Spalten
+    </f:if>
+    <f:if condition="{pi_flexform_transformed.settings.type} == 'twoo'">
+        2 Spalten auch mobil
+    </f:if>
+    <br>
+</h1>
+<h2>(<f:if condition="{pi_flexform_transformed.settings.color} == 'normal'">weißer Hintergrund und graue Boxen</f:if><f:if condition="{pi_flexform_transformed.settings.color} == 'white'">weißer Hintergrund und weiße Boxen</f:if><f:if condition="{pi_flexform_transformed.settings.color} == 'grey'">grauer Hintergrund und graue Boxen</f:if>)<br></h2>
+<h3>{pi_flexform_transformed.settings.headline}</h3>
+<f:format.html>{pi_flexform_transformed.settings.text}</f:format.html>
+<f:if condition="{pi_flexform_transformed.settings.img1}">
+    <f:image src="/uploads/tx_fsfzollercolumns/{pi_flexform_transformed.settings.img1}" height="50" />
+    <f:if condition="{pi_flexform_transformed.settings.img2}">
+        <f:image src="/uploads/tx_fsfzollercolumns/{pi_flexform_transformed.settings.img2}" height="50" />
+    </f:if>
+    <f:if condition="{pi_flexform_transformed.settings.img3}">
+        <f:image src="/uploads/tx_fsfzollercolumns/{pi_flexform_transformed.settings.img3}" height="50" />
+    </f:if>
+</f:if>
+
+
+
