@@ -242,6 +242,17 @@
 							</config>
 						</TCEforms>
 					</settings.img3>
+                    <settings.text3>
+                        <TCEforms>
+                            <label>Text 3. Spalte</label>
+                            <displayCond>FIELD:settings.type:=:three</displayCond>
+                            <config>
+                                <type>text</type>
+                                <cols>30</cols>
+                                <rows>4</rows>
+                            </config>
+                        </TCEforms>
+                    </settings.text3>
                     <settings.buttontext3>
                         <TCEforms>
                             <label>Buttontext 3. Spalte</label>
@@ -267,17 +278,6 @@
                             </config>
                         </TCEforms>
                     </settings.url3>
-                    <settings.text3>
-                        <TCEforms>
-                            <label>Text 3. Spalte</label>
-                            <displayCond>FIELD:settings.type:=:three</displayCond>
-                            <config>
-                                <type>text</type>
-                                <cols>30</cols>
-                                <rows>4</rows>
-                            </config>
-                        </TCEforms>
-                    </settings.text3>
                 </el>
             </ROOT>
         </sheet1>

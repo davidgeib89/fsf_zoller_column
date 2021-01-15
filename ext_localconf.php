@@ -41,7 +41,7 @@ call_user_func(
 			$iconRegistry->registerIcon(
 				'fsf_zoller_column-plugin-zollercolumn',
 				\TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-				['source' => 'EXT:fsf_zoller_column/Resources/Public/Icons/user_plugin_zollercolumn.svg']
+				['source' => 'EXT:fsf_zoller_column/Resources/Public/Icons/zoller_z.svg']
 			);
 		
     }

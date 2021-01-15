@@ -1,4 +1,4 @@
-<h1>
+<h2 style="margin-top:0;">
     Zoller Column
     <f:if condition="{pi_flexform_transformed.settings.type} == 'two'">
         2 Spalten
@@ -10,9 +10,9 @@
         2 Spalten auch mobil
     </f:if>
     <br>
-</h1>
-<h2>(<f:if condition="{pi_flexform_transformed.settings.color} == 'normal'">weißer Hintergrund und graue Boxen</f:if><f:if condition="{pi_flexform_transformed.settings.color} == 'white'">weißer Hintergrund und weiße Boxen</f:if><f:if condition="{pi_flexform_transformed.settings.color} == 'grey'">grauer Hintergrund und graue Boxen</f:if>)<br></h2>
-<h3>{pi_flexform_transformed.settings.headline}</h3>
+</h2>
+<h3>(<f:if condition="{pi_flexform_transformed.settings.color} == 'normal'">weißer Hintergrund und graue Boxen</f:if><f:if condition="{pi_flexform_transformed.settings.color} == 'white'">weißer Hintergrund und weiße Boxen</f:if><f:if condition="{pi_flexform_transformed.settings.color} == 'grey'">grauer Hintergrund und graue Boxen</f:if>)<br></h3>
+<h4>{pi_flexform_transformed.settings.headline}</h4>
 <f:format.html>{pi_flexform_transformed.settings.text}</f:format.html>
 <f:if condition="{pi_flexform_transformed.settings.img1}">
     <f:image src="/uploads/tx_fsfzollercolumns/{pi_flexform_transformed.settings.img1}" height="50" />

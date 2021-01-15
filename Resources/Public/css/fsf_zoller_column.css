@@ -41,7 +41,7 @@
 }
 
 .fsf-zoller-column .columnsrow .column.buttoncolumn {
-    padding-bottom: 80px;
+    padding-bottom: 120px;
 }
 
 .fsf-zoller-column .columnsrow .col-xl-4,
@@ -59,7 +59,7 @@
 }
 
 .fsf-zoller-column .headlinewrapper p {
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 }
 
 .fsf-zoller-column.whitewhite .columnsrow .column {
@@ -72,7 +72,7 @@
 
 .fsf-zoller-column .columnsrow .btn {
     position: absolute;
-    bottom: 0;
+    bottom: 30px;
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
