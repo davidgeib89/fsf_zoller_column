@@ -24,7 +24,7 @@ call_user_func(
                     elements {
                         zollercolumn {
                             iconIdentifier = fsf_zoller_column-plugin-zollercolumn
-                            title = LLL:EXT:fsf_zoller_column/Resources/Private/Language/locallang_db.xlf:tx_fsf_zoller_column_zollercolumn.name
+                            title = Column
                             description = LLL:EXT:fsf_zoller_column/Resources/Private/Language/locallang_db.xlf:tx_fsf_zoller_column_zollercolumn.description
                             tt_content_defValues {
                                 CType = list
