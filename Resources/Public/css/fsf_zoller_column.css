@@ -11,8 +11,9 @@
     padding-top: 50px;
 }
 
-.fsf-zoller-column h1 {
+.fsf-zoller-column h2 {
     font-weight: bold;
+    font-size:3rem;
 }
 
 .fsf-zoller-column .headlinewrapper {
@@ -84,6 +85,11 @@
     }
     .fsf-zoller-column .columnsrow .column {
         padding: 15px;
+    }
+
+    .fsf-zoller-column h2 {
+        font-weight: bold;
+        font-size:2rem;
     }
 }
 
