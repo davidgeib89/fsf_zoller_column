@@ -1,19 +1,53 @@
 <div
-    class="fsf-zoller-column {f:if(condition: '{settings.distance} == \'nodistance\'', then: 'nodistance')} {f:if(condition: '{settings.color} == \'white\'', then: 'whitewhite')} {f:if(condition: '{settings.color} == \'grey\'', then: 'greygrey')}"
+    class="
+        fsf-zoller-column
+        {f:if(condition:
+        '{settings.distance}
+        ==
+        \'nodistance\'',
+        then:
+        'nodistance')}
+        {f:if(condition:
+        '{settings.color}
+        ==
+        \'white\'',
+        then:
+        'whitewhite')}
+        {f:if(condition:
+        '{settings.color}
+        ==
+        \'grey\'',
+        then:
+        'greygrey')}
+        {f:if(condition:
+        '{settings.color}
+        ==
+        \'normal\'',
+        then:
+        'yellow-yellow')}
+    "
 >
     <div class="container">
         <div class="row">
-            <div class="col-12 col-xl-2"></div>
-            <div class="col-12 col-xl-8 headlinewrapper">
+            <div class="col-12 headlinewrapper">
                 <h2>{settings.headline}</h2>
                 <p>{settings.text}</p>
             </div>
-            <div class="col-12 col-xl-2"></div>
         </div>
         <div class="row columnsrow">
             <f:if condition="{settings.type} == 'two'">
                 <div class="col-12 col-xl-6">
-                    <div class="column {f:if(condition: '{settings.buttontext1} != \'\'', then: 'buttoncolumn')}" >
+                    <div
+                        class="
+                            column
+                            {f:if(condition:
+                            '{settings.buttontext1}
+                            !=
+                            \'\'',
+                            then:
+                            'buttoncolumn')}
+                        "
+                    >
                         <h3>{settings.headline1}</h3>
                         <f:if condition="{settings.img1}">
                             <f:image
@@ -23,10 +57,7 @@
                         </f:if>
                         <p>{settings.text1}</p>
                         <f:if condition="{settings.buttontext1}">
-                            <f:link.typolink
-                                parameter="{settings.url1}"
-                                
-                            >
+                            <f:link.typolink parameter="{settings.url1}">
                                 <button class="btn btn-yellow">
                                     {settings.buttontext1}
                                 </button>
@@ -35,7 +66,17 @@
                     </div>
                 </div>
                 <div class="col-12 col-xl-6">
-                    <div class="column {f:if(condition: '{settings.buttontext2} != \'\'', then: 'buttoncolumn')}">
+                    <div
+                        class="
+                            column
+                            {f:if(condition:
+                            '{settings.buttontext2}
+                            !=
+                            \'\'',
+                            then:
+                            'buttoncolumn')}
+                        "
+                    >
                         <h3>{settings.headline2}</h3>
                         <f:if condition="{settings.img2}">
                             <f:image
@@ -45,10 +86,7 @@
                         </f:if>
                         <p>{settings.text2}</p>
                         <f:if condition="{settings.buttontext2}">
-                            <f:link.typolink
-                                parameter="{settings.url2}"
-                                
-                            >
+                            <f:link.typolink parameter="{settings.url2}">
                                 <button class="btn btn-yellow">
                                     {settings.buttontext2}
                                 </button>
@@ -59,7 +97,21 @@
             </f:if>
             <f:if condition="{settings.type} == 'three'">
                 <div class="col-12 col-xl-4">
-                    <div class="column {f:if(condition: '{settings.buttontext1} != \'\'', then: 'buttoncolumn')}">
+                    <div
+                        class="
+                            column
+                            {f:if(condition:
+                            '{settings.buttontext1}
+                            !=
+                            \'\'',
+                            then:
+                            'buttoncolumn')}
+                        "
+                    >
+                        <img
+                            class="column-number number-one"
+                            src="/typo3conf/ext/fsf_zoller_column/Resources/Public/images/one.svg"
+                        />
                         <h3>{settings.headline1}</h3>
                         <f:if condition="{settings.img1}">
                             <f:image
@@ -69,10 +121,7 @@
                         </f:if>
                         <p>{settings.text1}</p>
                         <f:if condition="{settings.buttontext1}">
-                            <f:link.typolink
-                                parameter="{settings.url1}"
-                                
-                            >
+                            <f:link.typolink parameter="{settings.url1}">
                                 <button class="btn btn-yellow">
                                     {settings.buttontext1}
                                 </button>
@@ -81,7 +130,21 @@
                     </div>
                 </div>
                 <div class="col-12 col-xl-4">
-                    <div class="column {f:if(condition: '{settings.buttontext2} != \'\'', then: 'buttoncolumn')}">
+                    <div
+                        class="
+                            column
+                            {f:if(condition:
+                            '{settings.buttontext2}
+                            !=
+                            \'\'',
+                            then:
+                            'buttoncolumn')}
+                        "
+                    >
+                        <img
+                            class="column-number number-two"
+                            src="/typo3conf/ext/fsf_zoller_column/Resources/Public/images/two.svg"
+                        />
                         <h3>{settings.headline2}</h3>
                         <f:if condition="{settings.img2}">
                             <f:image
@@ -91,10 +154,7 @@
                         </f:if>
                         <p>{settings.text2}</p>
                         <f:if condition="{settings.buttontext2}">
-                            <f:link.typolink
-                                parameter="{settings.url2}"
-                                
-                            >
+                            <f:link.typolink parameter="{settings.url2}">
                                 <button class="btn btn-yellow">
                                     {settings.buttontext2}
                                 </button>
@@ -103,7 +163,21 @@
                     </div>
                 </div>
                 <div class="col-12 col-xl-4">
-                    <div class="column {f:if(condition: '{settings.buttontext3} != \'\'', then: 'buttoncolumn')}">
+                    <div
+                        class="
+                            column
+                            {f:if(condition:
+                            '{settings.buttontext3}
+                            !=
+                            \'\'',
+                            then:
+                            'buttoncolumn')}
+                        "
+                    >
+                        <img
+                            class="column-number number-three"
+                            src="/typo3conf/ext/fsf_zoller_column/Resources/Public/images/three.svg"
+                        />
                         <h3>{settings.headline3}</h3>
                         <f:if condition="{settings.img3}">
                             <f:image
@@ -113,10 +187,7 @@
                         </f:if>
                         <p>{settings.text3}</p>
                         <f:if condition="{settings.buttontext3}">
-                            <f:link.typolink
-                                parameter="{settings.url3}"
-                                
-                            >
+                            <f:link.typolink parameter="{settings.url3}">
                                 <button class="btn btn-yellow">
                                     {settings.buttontext3}
                                 </button>
@@ -127,7 +198,17 @@
             </f:if>
             <f:if condition="{settings.type} == 'twoo'">
                 <div class="col-6">
-                    <div class="column {f:if(condition: '{settings.buttontext1} != \'\'', then: 'buttoncolumn')}">
+                    <div
+                        class="
+                            column
+                            {f:if(condition:
+                            '{settings.buttontext1}
+                            !=
+                            \'\'',
+                            then:
+                            'buttoncolumn')}
+                        "
+                    >
                         <h3>{settings.headline1}</h3>
                         <f:if condition="{settings.img1}">
                             <f:image
@@ -137,10 +218,7 @@
                         </f:if>
                         <p>{settings.text1}</p>
                         <f:if condition="{settings.buttontext1}">
-                            <f:link.typolink
-                                parameter="{settings.url1}"
-                                
-                            >
+                            <f:link.typolink parameter="{settings.url1}">
                                 <button class="btn btn-yellow">
                                     {settings.buttontext1}
                                 </button>
@@ -149,7 +227,17 @@
                     </div>
                 </div>
                 <div class="col-6">
-                    <div class="column {f:if(condition: '{settings.buttontext2} != \'\'', then: 'buttoncolumn')}">
+                    <div
+                        class="
+                            column
+                            {f:if(condition:
+                            '{settings.buttontext2}
+                            !=
+                            \'\'',
+                            then:
+                            'buttoncolumn')}
+                        "
+                    >
                         <h3>{settings.headline2}</h3>
                         <f:if condition="{settings.img2}">
                             <f:image
@@ -159,10 +247,7 @@
                         </f:if>
                         <p>{settings.text2}</p>
                         <f:if condition="{settings.buttontext2}">
-                            <f:link.typolink
-                                parameter="{settings.url2}"
-                                
-                            >
+                            <f:link.typolink parameter="{settings.url2}">
                                 <button class="btn btn-yellow">
                                     {settings.buttontext2}
                                 </button>

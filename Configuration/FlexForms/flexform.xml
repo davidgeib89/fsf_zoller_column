@@ -44,7 +44,7 @@
 								<renderType>selectSingle</renderType>
 								<items type="array">
 									<numIndex index="0" type="array">
-										<numIndex index="0">weiß - grau</numIndex>
+										<numIndex index="0">gelb - gelb</numIndex>
 										<numIndex index="1">normal</numIndex>
 									</numIndex>
 									<numIndex index="1" type="array">
@@ -52,7 +52,7 @@
 										<numIndex index="1">white</numIndex>
 									</numIndex>
                                     <numIndex index="2" type="array">
-										<numIndex index="0">grau - grau</numIndex>
+										<numIndex index="0">weiß - gelb</numIndex>
 										<numIndex index="1">grey</numIndex>
 									</numIndex>
 								</items>
