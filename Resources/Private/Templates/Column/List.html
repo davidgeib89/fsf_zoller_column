@@ -209,21 +209,42 @@
                             'buttoncolumn')}
                         "
                     >
-                        <h3>{settings.headline1}</h3>
-                        <f:if condition="{settings.img1}">
-                            <f:image
-                                class="column-image"
-                                src="/uploads/tx_fsfzollercolumns/{settings.img1}"
-                            />
-                        </f:if>
-                        <p>{settings.text1}</p>
-                        <f:if condition="{settings.buttontext1}">
-                            <f:link.typolink parameter="{settings.url1}">
-                                <button class="btn btn-yellow">
-                                    {settings.buttontext1}
-                                </button>
-                            </f:link.typolink>
-                        </f:if>
+                        <div class="inside-column-wrapper">
+                            <h3>{settings.headline1}</h3>
+                            <f:if condition="{settings.color} == 'grey'">
+                                <p>{settings.text1}</p></f:if
+                            >
+                            <f:if condition="{settings.color} == 'grey'">
+                                <f:then></f:then>
+                                <f:else
+                                    ><f:image
+                                        class="column-image"
+                                        src="/uploads/tx_fsfzollercolumns/{settings.img1}"
+                                /></f:else>
+                            </f:if>
+                            <f:if condition="{settings.color} == 'grey'">
+                                <f:then></f:then>
+                                <f:else><p>{settings.text1}</p></f:else>
+                            </f:if>
+                            <div class="button-image-wrapper">
+                                <f:if condition="{settings.buttontext1}">
+                                    <f:link.typolink
+                                        parameter="{settings.url1}"
+                                    >
+                                        <button class="btn btn-yellow">
+                                            {settings.buttontext1}
+                                        </button>
+                                    </f:link.typolink>
+                                </f:if>
+
+                                <f:if condition="{settings.color} == 'grey'">
+                                    <f:then
+                                        ><f:image
+                                            class="column-image"
+                                            src="/uploads/tx_fsfzollercolumns/{settings.img1}" /></f:then
+                                ></f:if>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-6">
@@ -238,21 +259,44 @@
                             'buttoncolumn')}
                         "
                     >
-                        <h3>{settings.headline2}</h3>
-                        <f:if condition="{settings.img2}">
-                            <f:image
-                                class="column-image"
-                                src="/uploads/tx_fsfzollercolumns/{settings.img2}"
-                            />
-                        </f:if>
-                        <p>{settings.text2}</p>
-                        <f:if condition="{settings.buttontext2}">
-                            <f:link.typolink parameter="{settings.url2}">
-                                <button class="btn btn-yellow">
-                                    {settings.buttontext2}
-                                </button>
-                            </f:link.typolink>
-                        </f:if>
+                        <div class="inside-column-wrapper">
+                            <h3>{settings.headline2}</h3>
+                            <f:if condition="{settings.color} == 'grey'">
+                                <p>{settings.text2}</p>
+                            </f:if>
+                            <f:if condition="{settings.color} == 'grey'">
+                                <f:then></f:then>
+                                <f:else>
+                                    <f:if condition="{settings.img2}">
+                                        <f:image
+                                            class="column-image"
+                                            src="/uploads/tx_fsfzollercolumns/{settings.img2}"
+                                        /> </f:if
+                                ></f:else>
+                            </f:if>
+
+                            <f:if condition="{settings.color} == 'grey'">
+                                <f:then></f:then>
+                                <f:else><p>{settings.text2}</p></f:else>
+                            </f:if>
+                            <div class="button-image-wrapper">
+                                <f:if condition="{settings.buttontext2}">
+                                    <f:link.typolink
+                                        parameter="{settings.url2}"
+                                    >
+                                        <button class="btn btn-yellow">
+                                            {settings.buttontext2}
+                                        </button>
+                                    </f:link.typolink>
+                                </f:if>
+                                <f:if condition="{settings.color} == 'grey'"
+                                    ><f:image
+                                        class="column-image"
+                                        src="/uploads/tx_fsfzollercolumns/{settings.img2}"
+                                    />
+                                </f:if>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </f:if>
