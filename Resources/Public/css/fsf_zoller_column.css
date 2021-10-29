@@ -18,6 +18,10 @@
     margin-bottom: 23px;
 }
 
+.fsf-zoller-column.nodistance.greygrey  {
+    margin-bottom: 200px !important;
+}
+
 .fsf-zoller-column.greygrey h2 {
     font-weight: 500;
     font-size: 100px;
@@ -321,10 +325,13 @@
         line-height: 22px;
         margin-bottom: 22px;
     }
+    .fsf-zoller-column.nodistance.greygrey  {
+        margin-bottom: 120px !important;
+    }
 }
 
 @media (max-width: 1440px) {
-    .fsf-zoller-column .columnsrow .col-6 {
+    .fsf-zoller-column.greygrey .columnsrow .col-6 {
         width: 100%;
         flex: 0 0 100%;
         max-width: 100%;
